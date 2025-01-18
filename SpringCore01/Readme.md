@@ -38,3 +38,8 @@ TshapedSkills t = container.getBean(TshapedSkills.class); <br>
 
 Using that bean we are gettong the status.<br>
 Boolean status = t.buyTheCourse(454.4);
+
+
+**AutoWire vs ManualWire**
+
+<img width="973" alt="Screenshot 2025-01-18 at 11 40 07 PM" src="https://github.com/user-attachments/assets/69b049ff-0af3-4fc5-97a3-c9b97440efe8" />
