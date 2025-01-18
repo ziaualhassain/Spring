@@ -11,3 +11,18 @@ But in BeanFactory objects/beans will be created for the applications which are 
 <img width="963" alt="Screenshot 2025-01-18 at 10 25 52 PM" src="https://github.com/user-attachments/assets/d13a47e5-37f2-4835-af9c-dafab8bc58d0" />
 
 <img width="1273" alt="Screenshot 2025-01-18 at 10 19 50 PM" src="https://github.com/user-attachments/assets/b2161816-0458-4bea-99c9-45befe13776b" />
+
+
+**Setter Injection**
+<bean id="ts" class="Services.TshapedSkills">
+  <property ref="java" name="course"/>  <!-- Inject java in the course reference in tshapedSkills -->
+</bean> 
+
+<img width="527" alt="Screenshot 2025-01-18 at 10 52 13 PM" src="https://github.com/user-attachments/assets/c60b1685-8404-47bd-b060-fd53d70e4a95" />
+ApplicationContext container = new ClassPathXmlApplicationContext("applicationconfig.xml");
+We are getting the bean from container. <br>
+
+TshapedSkills t = container.getBean(TshapedSkills.class); <br>
+
+Using that bean we are gettong the status.<br>
+Boolean status = t.buyTheCourse(454.4);
