@@ -9,8 +9,8 @@ xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org
     <bean id="sb" class="Services.SpringBoot"></bean>
     <!-- if we don't give id/reference for the bean by deafult it will be camalCase of classname' -->
      
-    <!-- Setter Injection -->
+    <!-- Constructor Injection -->
     <bean id="ts" class="Services.TshapedSkills">
-    	<property ref="java" name="course"/>  <!-- Inject java in the course reference in tshapedSkills -->
+    	<constructor-arg ref="java" name="course"/>  <!-- Injecting via constructor -->
     </bean> 
 </beans>

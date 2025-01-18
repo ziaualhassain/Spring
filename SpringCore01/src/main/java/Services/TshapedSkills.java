@@ -5,8 +5,14 @@ public class TshapedSkills {
 	private Icourse course;
 	
 	public void setCourse(Icourse course) {
-		System.out.println("Setter Injection");
+		System.out.println("setter injection");
 		this.course = course;
+	}
+	
+	public TshapedSkills(Icourse course) {
+		System.out.println("Constructor injection");
+		this.course = course;
+		
 	}
 	
 	public TshapedSkills() {
