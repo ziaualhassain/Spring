@@ -1,6 +1,10 @@
 package Services;
 
 public class JavaCourse implements Icourse {
+	
+	public JavaCourse() {
+		System.out.println("Java Bean created");
+	}
 
 	@Override
 	public Boolean getTheCourse(Double price) {

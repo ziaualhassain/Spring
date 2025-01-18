@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans 
+xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="java" class="Services.JavaCourse"></bean>
+    <bean id="sb" class="Services.SpringBoot"></bean>
+    <!-- if we don't give id/reference for the bean by deafult it will be camalCase of classname' -->
+     
+    <!-- Setter Injection -->
+    <bean id="ts" class="Services.TshapedSkills">
+    	<property ref="java" name="course"/>  <!-- Inject java in the course reference in tshapedSkills -->
+    </bean> 
+</beans>

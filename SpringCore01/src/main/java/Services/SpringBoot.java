@@ -1,6 +1,10 @@
 package Services;
 
 public class SpringBoot implements Icourse {
+	
+	public SpringBoot() {
+		System.out.println("SpringBoot Bean created");
+	}
 
 	@Override
 	public Boolean getTheCourse(Double price) {
