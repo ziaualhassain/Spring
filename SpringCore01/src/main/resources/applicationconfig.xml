@@ -6,11 +6,21 @@ xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="java" class="Services.JavaCourse"></bean>
-    <bean id="sb" class="Services.SpringBoot"></bean>
+    <bean id="sb" class="Services.SpringBoot" primary="true"></bean>
+    <bean id="ts" class="Services.TshapedSkills" autowire="constructor"></bean>  
+    <!-- 
+		should not have ambigity we have 2 qualified beans(java , sb) so make one primary
+		autowire bydefault uses setter injection
+		types in autowire (byType,constructor)
+	-->
+    
     <!-- if we don't give id/reference for the bean by deafult it will be camalCase of classname' -->
      
-    <!-- Constructor Injection -->
-    <bean id="ts" class="Services.TshapedSkills">
-    	<constructor-arg ref="java" name="course"/>  <!-- Injecting via constructor -->
+    <!-- manualwire	
+		Constructor Injection 
+    <bean id="ts" class="Services.TshapedSkills" autowire="byType">
+    	 <constructor-arg ref="java" name="course"/> Injecting via constructor 
     </bean> 
+    -->
+    
 </beans>
