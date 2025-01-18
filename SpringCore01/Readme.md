@@ -19,6 +19,8 @@ But in BeanFactory objects/beans will be created for the applications which are 
 </bean> 
 
 <img width="527" alt="Screenshot 2025-01-18 at 10 52 13 PM" src="https://github.com/user-attachments/assets/c60b1685-8404-47bd-b060-fd53d70e4a95" />
+
+
 ApplicationContext container = new ClassPathXmlApplicationContext("applicationconfig.xml");
 We are getting the bean from container. <br>
 
