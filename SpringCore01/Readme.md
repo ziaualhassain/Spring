@@ -1,3 +1,5 @@
+**Spring Core and XML approch**
+
 There are 2 ways to use spring framework(Spring Core) one is by using Application Context and Bean Factory. <br>
 Here in this repo we will see the ApplicationContext approch. <br>
 Here we will need a configuration file/Instructions which is a xml file only. <br>
