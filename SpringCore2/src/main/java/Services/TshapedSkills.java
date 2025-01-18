@@ -10,6 +10,7 @@ public class TshapedSkills {
 	}
 	
 	public TshapedSkills(Icourse course) {
+		System.out.println("TshapedSkills Bean created");
 		System.out.println("Constructor injection");
 		this.course = course;
 		
