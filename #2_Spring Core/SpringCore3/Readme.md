@@ -1,3 +1,4 @@
+<<<<<<< HEAD:#2_Spring Core/SpringCore3/Readme.md
 **XML + Annoation  approch**
 
 In the real world the application will be devloped in a layered Approch. <br>
