@@ -1,30 +1,20 @@
 package main;
 
-import org.springframework.beans.factory.support.DefaultListableBeanFactory;
-import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import Services.TshapedSkills;
+import com.tshaped.services.Password;
+
 
 public class LaunchApp {
 
 	public static void main(String[] args) {
 		
-		DefaultListableBeanFactory container = new DefaultListableBeanFactory();
+		ApplicationContext container = new ClassPathXmlApplicationContext("applicationconfig.xml");
+
+		Password pass = container.getBean(Password.class);
 		
-		XmlBeanDefinitionReader read = new XmlBeanDefinitionReader(container);
-		
-		read.loadBeanDefinitions("applicationconfig.xml");
-		
-		TshapedSkills t = container.getBean(TshapedSkills.class); //get the bean from container.
-		
-		Boolean status = t.buyTheCourse(454.4);
-		
-		
-		if(status) {
-			System.out.println("Course Purchased Sucessfully");
-		}else{
-			System.out.println("Course Purchased Failed");
-		}
-	}
+		pass.aboutAlgo();
+   }
 
 }
