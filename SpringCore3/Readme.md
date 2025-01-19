@@ -16,3 +16,12 @@ In this approch we need ti config the xml file saying two things: <br>
 
 
 <img width="637" alt="Screenshot 2025-01-19 at 1 56 17 PM" src="https://github.com/user-attachments/assets/5344b7d9-13d4-4b42-a446-36b035af95d0" />
+
+
+
+For Password class we don't have any sterotype annoataions but we are trying to access it via IOC Container. It will throw an error.<br>
+<img width="685" alt="Screenshot 2025-01-19 at 2 06 40 PM" src="https://github.com/user-attachments/assets/b35f21b8-ac46-413a-acfc-2268c8afa5c7" />
+<img width="750" alt="Screenshot 2025-01-19 at 2 07 11 PM" src="https://github.com/user-attachments/assets/0343c741-5034-455a-9201-cdd0176a56e3" />
+
+If an object is created by the developer and you want srping to maintain it in IOC we can use the **Bean** annotation
+<img width="555" alt="Screenshot 2025-01-19 at 2 07 28 PM" src="https://github.com/user-attachments/assets/2fed548e-0bed-411d-a994-d72a4779f88b" />
