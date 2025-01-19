@@ -26,3 +26,9 @@ For Password class we don't have any sterotype annoataions but we are trying to 
 
 If an object is created by the developer and you want srping to maintain it in IOC we can use the **Bean** annotation
 <img width="555" alt="Screenshot 2025-01-19 at 2 07 28 PM" src="https://github.com/user-attachments/assets/2fed548e-0bed-411d-a994-d72a4779f88b" />
+=======
+Create a config file and pass it to annoation class via constructor <br>
+<img width="672" alt="Screenshot 2025-01-19 at 2 21 49 PM" src="https://github.com/user-attachments/assets/eb147558-855b-451e-8996-5d24acec4760" /> <br>
+<img width="712" alt="Screenshot 2025-01-19 at 2 22 00 PM" src="https://github.com/user-attachments/assets/3196c8bb-9365-4707-8dfc-40ccc4c91810" /> <br>
+So here we don't have xml approch.
+>>>>>>> b38beb0b021668f4156694445294c15b2319e4c2:SpringJavaConfig/Readme.md
